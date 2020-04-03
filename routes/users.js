@@ -13,6 +13,10 @@ router.get('/login', (req, res) => res.render('login'));
 //Registration Page
 router.get('/register', (req, res) => res.render('register'));
 
+//Forgot Password page
+router.get('/forgotpassword', (req, res) => res.render('forgotpassword'));
+
+
 //Register Handle
 router.post('/register', (req, res) => {
     const { name, email, password, password2 } = req.body;
